@@ -1,17 +1,16 @@
 "use client";
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence, useScroll } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 
-export const FloatingNav = ({
+const FloatingNavbar = ({
   navItems,
   className,
 }: {
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
   }[];
   className?: string;
 }) => {
@@ -33,10 +32,10 @@ export const FloatingNav = ({
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.2,
+          duration: 0.5,
         }}
         className={cn(
-          "flex max-w-fit fixed top-8 md:top-12 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-lg md:rounded-xl  shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] py-3 px-6 md:py-5 md:px-12 items-center justify-center space-x-4",
+          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-white/[0.2] rounded-xl bg-deep-primary shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] items-center justify-center space-x-8 py-5 px-12",
           className
         )}
         style={{
@@ -45,15 +44,9 @@ export const FloatingNav = ({
             "linear-gradient(90deg, rgba(0,3,25,1) 0%, rgba(9,13,39,1) 100%)",
         }}
       >
-        {navItems.map((navItem: any, idx: number) => (
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "relative dark:text-neutral-300 items-center flex space-x-1 dark:hover:text-neutral-50"
-            )}
-          >
-            <span className="sm:block text-xs font-light md:text-sm md:font-normal">
+        {navItems.map((navItem: any) => (
+          <Link key={navItem.name} href={navItem.link}>
+            <span className="text-sm leading-6 hover:text-violet-300">
               {navItem.name}
             </span>
           </Link>
@@ -62,3 +55,5 @@ export const FloatingNav = ({
     </AnimatePresence>
   );
 };
+
+export default FloatingNavbar;

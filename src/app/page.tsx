@@ -1,13 +1,13 @@
 import Hero from "@/components/Hero/Hero";
-import { FloatingNav } from "@/components/ui/floating-navbar";
+import FloatingNavbar from "@/components/Navber/FloatingNavbar";
 import { navItems } from "@/data/content";
 
 const HomePage = () => {
   return (
-    <div className="relative w-full overflow-hidden">
-      <FloatingNav navItems={navItems} />
+    <main className="relative w-full min-h-screen bg-primary">
+      <FloatingNavbar navItems={navItems} />
       <Hero />
-    </div>
+    </main>
   );
 };
 

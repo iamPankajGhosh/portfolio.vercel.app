@@ -1,24 +1,17 @@
-import React from "react";
 import { cn } from "@/utils/cn";
 
 type SpotlightProps = {
   className?: string;
   fill?: string;
-  startWith?: string;
-  opacity?: string;
+  animateFrom?: string;
 };
 
-export const Spotlight = ({
-  className,
-  fill,
-  startWith,
-  opacity,
-}: SpotlightProps) => {
+export const Spotlight = ({ className, fill, animateFrom }: SpotlightProps) => {
   return (
     <svg
       className={cn(
         `${
-          startWith === "right"
+          animateFrom === "right"
             ? "animate-spotlight-right"
             : "animate-spotlight"
         } pointer-events-none absolute z-[1]  h-[169%] w-[138%] lg:w-[84%] opacity-0`,
@@ -30,13 +23,13 @@ export const Spotlight = ({
     >
       <g filter="url(#filter)">
         <ellipse
-          cx="1924.71"
-          cy="273.501"
+          cx="1925"
+          cy="274"
           rx="1925"
-          ry="100"
+          ry="154"
           transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
           fill={fill ?? "white"}
-          fillOpacity={opacity ? opacity : "0.2"}
+          fillOpacity="0.21"
         ></ellipse>
       </g>
       <defs>
