@@ -5,18 +5,19 @@ import WordPullUp from "./ui/word-pull-up";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col w-full min-h-[100vh] md:min-h-[120vh] items-center justify-center px-4 overflow-hidden">
+    <section className="relative flex flex-col w-full items-center justify-center px-4 py-[150px] overflow-hidden">
       <p className="uppercase mb-4 text-center text-xs md:text-sm tracking-widest md:tracking-[0.2em]">
-        Dynamic Web Magic With Next.js
+        Crafting Interactive Web Experiences With Next.js
       </p>
 
       <WordPullUp
-        words="Transforming Concepts into Seamless User Experiences"
-        className="text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-7xl md:leading-[5rem] mb-10 text-center"
+        words="Turning Ideas into Amazing User Experiences"
+        className="text-5xl font-bold tracking-[-0.02em] text-black dark:text-white sm:text-6xl md:text-7xl md:leading-[5rem] mb-10 text-center sm:max-w-[80vw]"
       />
 
-      <p className="text-center text-lg md:text-2xl md:tracking-wider tracking-wide mb-10">
-        Hi! I&apos;m Pankaj, a Next.js Developer based in India.
+      <p className="text-center text-lg md:text-2xl md:tracking-wider tracking-wide mb-10 sm:max-w-[70vw]">
+        Namaste! I&apos;m Pankaj, bringing Next.js expertise to web development
+        projects across India.
       </p>
 
       <Particles

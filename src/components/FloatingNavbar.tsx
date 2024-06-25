@@ -21,7 +21,9 @@ const FloatingNavbar = () => {
     },
   ];
 
-  return <FloatingNav navItems={navItems} className="rounded-lg" />;
+  return (
+    <FloatingNav navItems={navItems} className="rounded-lg md:rounded-xl" />
+  );
 };
 
 export default FloatingNavbar;
