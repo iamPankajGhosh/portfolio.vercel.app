@@ -3,7 +3,6 @@ import Globe from "./ui/globe";
 import TechStackCard from "./TechStackCard";
 import AnimatedGridPattern from "./ui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
-import GradientButton from "./ui/gradient-button";
 import RetroGrid from "./ui/retro-grid";
 import { WavyBackground } from "./ui/wavy-background";
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
@@ -60,8 +59,8 @@ const features = [
 
 export function About() {
   return (
-    <section className="relative flex flex-col w-full items-center justify-center px-4 md:px-10 overflow-hidden">
-      <BentoGrid className="md:grid-rows-6 md:max-w-[90vw]">
+    <section className="relative flex flex-col w-full items-center justify-center px-4 pb-20 md:px-10 overflow-hidden">
+      <BentoGrid className="md:grid-rows-4 md:max-w-[90vw]">
         {features.map((feature) => (
           <BentoCard key={feature.name} {...feature} />
         ))}
