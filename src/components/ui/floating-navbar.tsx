@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 export const FloatingNav = ({
   navItems,
@@ -42,10 +42,14 @@ export const FloatingNav = ({
       >
         {navItems.map((navItem: any, idx: number) => (
           <Link
-            key={`link=${idx}`}
-            href={navItem.link}
+            key={navItem.name}
+            to={navItem.name}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:text-blue-300"
+              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:text-blue-300 cursor-pointer"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>

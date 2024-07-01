@@ -31,6 +31,7 @@ const Contact = () => {
         words="Let's get in touch"
         icons={<FaArrowUpRightFromSquare />}
         iconPosition="right"
+        mailTo="work.pankajghosh@gmail.com"
       />
 
       <div className="absolute bottom-0 left-0 w-full flex items-center justify-between px-8 py-10">
