@@ -4,6 +4,9 @@ import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Link from "next/link";
 import projectOneImg from "../../public/project-one.png";
+import projectTwoImg from "../../public/project-two.png";
+import projectThreeImg from "../../public/project-three.png";
+import projectFourImg from "../../public/project-four.png";
 
 const Project = () => {
   return (
@@ -19,21 +22,23 @@ const Project = () => {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              Make things float in air
+              Inventory and Invoice management system
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Hover over this card to unleash the power of CSS perspective
+              Developed a full-stack web application for inventory tracking and
+              invoice management, designed to streamline business operations and
+              improve financial oversight.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
                 src={projectOneImg}
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
             </CardItem>
@@ -41,7 +46,7 @@ const Project = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="https://sipl-business-erp.vercel.app/"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
@@ -49,10 +54,12 @@ const Project = () => {
               </CardItem>
               <CardItem
                 translateZ={20}
-                as="button"
+                as={Link}
+                href="https://github.com/iamPankajGhosh/inventory-invoice"
+                target="__blank"
                 className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
               >
-                Sign up
+                Source code
               </CardItem>
             </div>
           </CardBody>
@@ -64,21 +71,23 @@ const Project = () => {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              Make things float in air
+              Musical Institute UI
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Hover over this card to unleash the power of CSS perspective
+              Designed and developed a responsive website for a fictional
+              musical institute to showcase courses, while providing an
+              intuitive user experience for potential students.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
-                src={projectOneImg}
+                src={projectTwoImg}
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
             </CardItem>
@@ -86,18 +95,20 @@ const Project = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="https://master-the-art.vercel.app/"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
-                Try now →
+                Live now →
               </CardItem>
               <CardItem
                 translateZ={20}
-                as="button"
+                as={Link}
+                href="https://github.com/iamPankajGhosh/master-the-art.vercel.app"
+                target="__blank"
                 className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
               >
-                Sign up
+                Source code
               </CardItem>
             </div>
           </CardBody>
@@ -109,21 +120,23 @@ const Project = () => {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              Make things float in air
+              Secure Speak
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Hover over this card to unleash the power of CSS perspective
+              Developed an anonymous feedback web application using NextJs,
+              enabling users to provide feedback without revealing their
+              identities.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
-                src={projectOneImg}
+                src={projectThreeImg}
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
             </CardItem>
@@ -131,18 +144,20 @@ const Project = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="https://secure-speak.vercel.app/"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
-                Try now →
+                Live now →
               </CardItem>
               <CardItem
                 translateZ={20}
-                as="button"
+                as={Link}
+                href="https://github.com/iamPankajGhosh/secure-speak.vercel.app"
+                target="__blank"
                 className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
               >
-                Sign up
+                Source code
               </CardItem>
             </div>
           </CardBody>
@@ -154,21 +169,23 @@ const Project = () => {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              Make things float in air
+              Siplhub UI
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Hover over this card to unleash the power of CSS perspective
+              Developed a professional, dynamic website for an IT company to
+              showcase services, portfolio, and team expertise, enhancing online
+              presence and client engagement.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
-                src={projectOneImg}
+                src={projectFourImg}
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
             </CardItem>
@@ -176,18 +193,20 @@ const Project = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="https://siplhub.vercel.app/"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
-                Try now →
+                Live now →
               </CardItem>
               <CardItem
                 translateZ={20}
-                as="button"
+                as={Link}
+                href="https://github.com/iamPankajGhosh/siplhub.vercel.app"
+                target="__blank"
                 className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
               >
-                Sign up
+                Source code
               </CardItem>
             </div>
           </CardBody>
